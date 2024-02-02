@@ -1,2 +1,3 @@
 @echo off
-python.exe "<path of log.py>" %*
+cd /d "%~dp0"
+python.exe log.py %*
