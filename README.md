@@ -2,7 +2,7 @@
 
 Tool to log day-to-day software tasks
 
-I have used sqite3 for the backend database. Commands and arguments are being passed onto the python file using the batch file.
+I have used sqlite3 for the backend database. Commands and arguments are being passed onto the python file using the batch file.
 
 To use the tool:
 
