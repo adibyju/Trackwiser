@@ -2,13 +2,14 @@
 
 Tool to log day-to-day software tasks
 
-I have used sqlite3 for the backend database. Commands and arguments are being passed onto the python file using the batch file.
+I have used sqlite3 for the backend database. Commands and arguments are being passed onto the python file using the batch file. The NSIS install script has been made using HM NIS Edit Tool.
 
 To use the tool:
 
 - Add to PATH the directory where the files are stored
-- Change \<path of log.py> accordingly in log.bat file
 - Now you can use the tool from any directory
+
+or just download and run `Trackwiser_setup.exe` file.
 
 Commands:
 
