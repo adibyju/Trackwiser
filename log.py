@@ -31,9 +31,6 @@ class Trackwiser:
 
         self.cur.execute("CREATE TABLE IF NOT EXISTS log(date, entry)")
 
-        # res = self.cur.execute("SELECT name FROM sqlite_master")
-        # print(res.fetchone())
-
     def setup_subparsers(self):
         """Sets up the subparsers for different log commands."""
         # Sub-parser for the 'add' command
@@ -161,9 +158,11 @@ class Trackwiser:
             self.cur.execute("SELECT * FROM log WHERE date = ?", (date,))
             record = self.cur.fetchone()
             if record:
-                print(f"Entry for the date {date} is:") if len(
-                    record[1]
-                ) == 1 else print(f"Entries for the date {date} are:")
+                (
+                    print(f"Entry for the date {date} is:")
+                    if len(record[1]) == 1
+                    else print(f"Entries for the date {date} are:")
+                )
                 temp = json.loads(record[1])
                 for x in temp:
                     print(f"> {x}")
@@ -205,9 +204,11 @@ class Trackwiser:
             self.cur.execute("SELECT * FROM log WHERE date = ?", (date,))
             record = self.cur.fetchone()
             if record:
-                print(f"Entry for the date {date} is:") if len(
-                    record[1]
-                ) == 1 else print(f"Entries for the date {date} are:")
+                (
+                    print(f"Entry for the date {date} is:")
+                    if len(record[1]) == 1
+                    else print(f"Entries for the date {date} are:")
+                )
                 temp = json.loads(record[1])
                 for x in temp:
                     print(f"> {x}")
