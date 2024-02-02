@@ -19,31 +19,31 @@ Commands:
 log add "Completed Codeforces Round 921"
 ```
 
-1. **fetch:** &nbsp;&nbsp; to fetch a log entry of the specified date from the database
+2. **fetch:** &nbsp;&nbsp; to fetch a log entry of the specified date from the database
 
 ```
 log fetch "01/02/2024"
 ```
 
-1. **list:** &nbsp;&nbsp; to list log records from the past specified number of days
+3. **list:** &nbsp;&nbsp; to list log records from the past specified number of days
 
 ```
 log list 3
 ```
 
-1. **range:** &nbsp;&nbsp; to list records from a specified range of past days
+4. **range:** &nbsp;&nbsp; to list records from a specified range of past days
 
 ```
 log range "07/01/2024" "01/02/2024"
 ```
 
-1. **modify:** &nbsp;&nbsp; to modify a previous log entry
+5. **modify:** &nbsp;&nbsp; to modify a previous log entry
 
 ```
 log modify "23/01/2024" "Created login page of chat application"
 ```
 
-1. **del:** &nbsp;&nbsp; to delete a previous log entry
+6. **del:** &nbsp;&nbsp; to delete a previous log entry
 
 ```
 log del "02/01/2024"
