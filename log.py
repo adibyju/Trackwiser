@@ -16,30 +16,6 @@ import datetime
 class Trackwiser:
     """Tool to log day-to-day software tasks."""
 
-    # def __init__(self):
-    #     # Initialize the parser with a description
-    #     self.parser = argparse.ArgumentParser(
-    #         prog="log", description="Trackwiser Log Tool"
-    #     )
-    #     self.subparsers = self.parser.add_subparsers(dest="command", help="Description")
-    #     self.setup_subparsers()
-
-    #     curr_dir_path = os.path.dirname(os.path.realpath(__file__))
-
-    #     db_path = curr_dir_path + "\log_data.db"
-
-    #     if not os.path.exists(db_path):
-    #         try:
-    #             file = open(file_path, 'x')
-    #             file.close()
-    #         except FileExistsError:
-    #             continue
-
-    #     self.con = sqlite3.connect(db_path)
-    #     self.cur = self.con.cursor()
-
-    #     self.cur.execute("CREATE TABLE IF NOT EXISTS log(date, entry)")
-
     def __init__(self):
         # Initialize the parser with a description
         self.parser = argparse.ArgumentParser(
